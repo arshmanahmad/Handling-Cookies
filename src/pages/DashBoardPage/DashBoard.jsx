@@ -16,7 +16,7 @@ const DashBoard = () => {
                     Welcome
                 </h1>
                 <h3>Click the button to delete account</h3>
-                <button onClick={handleDeleteToken}>Delete</button>
+                <button onClick={handleDeleteToken}>Logout</button>
             </div>
         </>
     )
