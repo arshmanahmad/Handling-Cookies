@@ -1,19 +1,19 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import "./LoginPage.css";
 import Cookies from 'js-cookie';
+import { useNavigate } from 'react-router-dom';
 
 const LoginPage = () => {
-    const token = "shujaChuttu";
-
+    const navigate = useNavigate();
     const [name, setName] = useState('');
     const [password, setPassword] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        Cookies.set("token", token, { expires: 1 });
-
+        Cookies.set("name", name, { expires: 1 });
+        Cookies.set("password", password, { expires: 1 });
+        navigate("/DashBoard")
     }
-
 
     return (
         <>
