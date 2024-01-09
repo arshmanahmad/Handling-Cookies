@@ -13,7 +13,7 @@ const DashBoard = () => {
         <>
             <div>
                 <h1>
-                    Welcome
+                    This is the DashBoard page and this is the way we have to logout by clicking on the button logout.
                 </h1>
                 <h3>Click the button to delete account</h3>
                 <button onClick={handleDeleteToken}>Logout</button>
